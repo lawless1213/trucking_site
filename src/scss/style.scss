@@ -1,0 +1,24 @@
+// Global SCSS-files imports
+@import './vars';
+@import './reset';
+@import './global';
+
+// Sections or Pages SCSS-files imports
+// @import './header';
+@import './pagination';
+
+@import './navbar';
+
+@import './sections/default';
+@import './sections/main';
+@import './sections/info';
+@import './sections/offers';
+@import './sections/about';
+
+@import './footer';
+
+// Libs
+// @import './libs/swiper';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');

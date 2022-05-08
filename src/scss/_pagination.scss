@@ -1,0 +1,33 @@
+.pagination {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 300px;
+
+	.link {
+		img {
+			position: relative;
+			transition: $transition;
+		}
+
+		&__next {
+			&:hover {
+				img {
+					transform: translateX(10px);
+				}
+			}
+		}
+
+		&__back {
+			&:hover {
+				img {
+					transform: translateX(-10px);
+				}
+			}
+		}
+
+		*:first-child {
+			margin-right: 30px;
+		}
+	}
+}
