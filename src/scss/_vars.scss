@@ -18,11 +18,12 @@ $fontMain: sans-serif;
 $fontSecondary: '';
 
 //Colors
+$colorWhite: #fff;
 $colorPrimary: #2F343A;
 $colorSecondary: #C8A35F;
 $colorTretiary: #393F47;
 
-$textColorPrimary: #fff;
+$textColorPrimary: $colorWhite;
 $textColorSecondary: $colorPrimary;
 $textColorTretiary: $colorSecondary;
 

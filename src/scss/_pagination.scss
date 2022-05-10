@@ -5,6 +5,11 @@
 	height: 300px;
 
 	.link {
+
+		&:hover {
+			filter: brightness(1.2);
+		}
+
 		img {
 			position: relative;
 			transition: $transition;

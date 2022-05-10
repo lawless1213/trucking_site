@@ -3,5 +3,12 @@
 	.container {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+
+		.text_wrap {
+			.section_title {
+				margin-bottom: 30px;
+			}
+		}
 	}
 }

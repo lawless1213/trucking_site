@@ -66,6 +66,19 @@ body {
   }
 }
 
+.button {
+  padding: 18px 48px;
+  background: $colorSecondary;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  transition: $transition;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
 .link {
   &:hover {
     color: $textColorTretiary;

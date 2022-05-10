@@ -2,5 +2,59 @@
 	.container {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+
+		.section_content {
+			.text_wrap {
+				margin-bottom: 60px;
+			}
+
+			.offers_gallery {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1px;
+
+				.offers_card {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: 276px;
+					height: 180px;
+					background: $colorTretiary;
+					cursor: pointer;
+					transition: $transition;
+
+					&:hover {
+						background: $colorSecondary;
+
+						.card_icon {
+							background: $colorWhite;
+						}
+					}
+
+					.card_icon {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 70px;
+						height: 70px;
+						border-radius: 50%;
+						background: $colorSecondary;
+						margin-bottom: 24px;
+						transition: $transition;
+					}
+
+					.card_name {
+						font-weight: 700;
+						font-size: 18px;
+						line-height: 22px;
+						text-align: center;
+						letter-spacing: 0.05em;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
 	}
 }
