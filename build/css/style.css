@@ -86,20 +86,20 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-  background-color: gray;
-  border-radius: 5px;
+  width: 4px;
+  height: 4px;
+  background-color: #2F343A;
+  border-radius: 2px;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: gray;
-  border-radius: 5px;
+  background-color: #2F343A;
+  border-radius: 2px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: orange;
-  border-radius: 5px;
+  background-color: #C8A35F;
+  border-radius: 2px;
 }
 
 body.locked {
@@ -344,7 +344,7 @@ section .section_title:before {
           justify-content: center;
   position: relative;
   height: 100vh;
-  background: url("/img/main_bg.jpg");
+  background: url("../img/main_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
