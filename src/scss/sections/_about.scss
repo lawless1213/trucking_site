@@ -10,5 +10,53 @@
 				margin-bottom: 30px;
 			}
 		}
+
+		.about_gallery {
+			display:grid;
+			grid-template-columns: 1fr 1fr;
+
+			.about_item {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 200px;
+				height: 160px;
+				overflow: hidden;
+				border: 1px solid $colorSecondary;
+				background: $colorWhite;
+
+				* {
+					color: $colorPrimary;
+				}
+
+				.text_big {
+					font-weight: 700;
+					font-size: 64px;
+					line-height: 75px;
+					letter-spacing: 0.05em;
+					text-transform: uppercase;
+				}
+
+				.text_medium {
+					font-size: 18px;
+					line-height: 21px;
+					text-align: center;
+					letter-spacing: 0.05em;
+				}
+
+				.text_small {
+					font-weight: 400;
+					font-size: 12px;
+					line-height: 14px;
+					margin-top: 10px;
+				}
+
+				img {
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
 	}
 }
