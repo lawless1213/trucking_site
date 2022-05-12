@@ -8,15 +8,6 @@ $breakpoint992: 991.98 + px;
 $breakpoint768: 767.98 + px;
 $breakpoint480: 479.98 + px;
 
-// Burger Menu
-$burgerBreakpoint: $breakpoint992;
-$burgerColor: 'black';
-$burgerActiveColor: 'white';
-
-// Fonts
-$fontMain: sans-serif;
-$fontSecondary: '';
-
 //Colors
 $colorWhite: #fff;
 $colorPrimary: #2F343A;
@@ -26,6 +17,16 @@ $colorTretiary: #393F47;
 $textColorPrimary: $colorWhite;
 $textColorSecondary: $colorPrimary;
 $textColorTretiary: $colorSecondary;
+
+// Burger Menu
+$burgerBreakpoint: $breakpoint992;
+$burgerColor: $colorWhite;
+$burgerHoverColor: $colorSecondary;
+$burgerActiveColor: $colorWhite;
+
+// Fonts
+$fontMain: sans-serif;
+$fontSecondary: '';
 
 // Transition
 $transition: 0.2s;
