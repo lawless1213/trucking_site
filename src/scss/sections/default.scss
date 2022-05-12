@@ -1,9 +1,12 @@
 section {
 	position: relative;
-	display: flex;
-	align-items: center;
 	height: 100vh;
 	padding-top: $navHeight;
+	min-height: 700px;
+
+	@media (max-width: $breakpoint992) {
+		padding-top: $navHeightMobile;
+	}
 
 	&.dark {
 		background: $colorPrimary;
@@ -22,6 +25,10 @@ section {
 			top: calc(50% + $navHeight/2);
 			left: 50%;
 			transform: translate(-50%, -50%);
+
+			@media (max-width: $breakpoint768) {
+				display: none;
+			}
 		}
 	
 		&.dark {
@@ -40,6 +47,10 @@ section {
 	* {
 		position: relative;
 		z-index: 1;
+	}
+
+	.container {
+		height: 100%;
 	}
 
 	.text_wrap {
@@ -62,13 +73,39 @@ section {
 					width: 90px;
 					height: 6px;
 					background: $colorSecondary;
-					margin-bottom: 40px;
 			}
 		}
 	
 		.section_subtitle {
 			font-size: 18px;
 			line-height: 28px;
+		}
+
+		@media (max-width: $breakpoint992) {
+			max-width: unset;
+
+			.section_title {
+				padding-top: 26px;
+				line-height: 39px;
+				font-size: 30px;
+
+				&:before {
+					top: 10px;
+				}
+			}
+
+			.section_subtitle {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+
+	.pagination {
+		margin-left: 30px;
+
+		@media (max-width: $breakpoint992) {
+			margin-left: 0;
 		}
 	}
 }

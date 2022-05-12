@@ -1,5 +1,42 @@
 // Footer
 footer {
-    display: block;
     background: $colorSecondary;
+
+    .footer_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        min-height: 160px;
+        padding: 20px;
+        
+        @media (max-width: $breakpoint768) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .info_block {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .info_item{
+                color: #F2F2F2;
+
+                &__dark {
+                    color: $textColorSecondary;
+                }
+            }
+        }
+        
+        .dev_by {
+            a {
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }

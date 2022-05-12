@@ -19,8 +19,9 @@
 					flex-direction: column;
 					align-items: center;
 					justify-content: center;
-					width: 276px;
-					height: 180px;
+					width: 33%;
+					min-height: 180px;
+					padding: 10px;
 					background: $colorTretiary;
 					cursor: pointer;
 					transition: $transition;
@@ -43,6 +44,10 @@
 						background: $colorSecondary;
 						margin-bottom: 24px;
 						transition: $transition;
+
+						img {
+							height: 30px;
+						}
 					}
 
 					.card_name {
@@ -57,4 +62,44 @@
 			}
 		}
 	}
+
+	@media (max-width: $breakpoint992) {
+		.container {
+			flex-direction: column;
+		}
+	}
+
+	@media (max-width: $breakpoint768) {
+
+		.container {
+			.section_content {
+				.text_wrap {
+					margin-bottom: 10px;
+				}
+
+				.offers_gallery {
+					.offers_card {
+						width: calc(50% - .5px);
+						min-height: 100px;
+						padding: 30px 10px;
+
+						.card_icon {
+							width: 40px;
+							height: 40px;
+							margin-bottom: 10px;
+
+							img {
+								height: 20px;
+							}
+						}
+	
+						.card_name {
+							font-size: 14px;
+							line-height: 18px;
+						}
+					}
+				}
+			}
+		}
+  }
 }

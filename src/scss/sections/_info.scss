@@ -9,5 +9,29 @@
 				margin: 30px 0 50px;
 			}
 		}
+
+		.section_img {
+			height: 266px;
+		}
+	}
+
+	@media (max-width: $breakpoint992) {
+		.container {
+			flex-direction: column;
+		}
+	}
+
+	@media (max-width: $breakpoint480) {
+		.container {
+			.text_wrap {
+				.section_subtitle {
+					margin: 10px 0;
+				}
+			}
+
+			.section_img {
+				height: 150px;
+			}
+		}
 	}
 }

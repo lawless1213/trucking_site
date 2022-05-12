@@ -17,13 +17,24 @@ nav {
     width: 100%;
     height: $navHeight;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: calc(($navHeight - 46px)/2) 0;
+
+    @media (max-width: $breakpoint992) {
+		height: $navHeightMobile;
+        padding: calc(($navHeightMobile - 46px)/2) 0;
+	}
 }
 
 .logo {
     a {
-        color: white;
+        display: block;
     }
+}
+
+.divider {
+    @media (max-width: $breakpoint992) {
+		margin: 10px !important;
+	}
 }
 
 .menu {

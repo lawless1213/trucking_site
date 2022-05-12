@@ -35,4 +35,18 @@
 			margin-right: 30px;
 		}
 	}
+
+	@media (max-width: $breakpoint992) {
+    width: 100%;
+		height: unset;
+		flex-direction: row;
+		padding: 50px 0;
+  }
+
+	@media (max-width: $breakpoint480) {
+    width: 100%;
+		height: unset;
+		flex-direction: row;
+		padding: 20px 0;
+  }
 }

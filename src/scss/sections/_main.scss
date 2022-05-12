@@ -1,5 +1,4 @@
 .main_section {
-	justify-content: center;
 	position: relative;
 	height: 100vh;
 	background: url("../img/main_bg.jpg");
@@ -7,39 +6,66 @@
 	background-position: center;
 	background-size: cover;
 
-	.text_wrap {
-		max-width: 920px;
-		padding: 46px 70px;
-		text-align: center;
-		border: 1px solid $colorSecondary;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-		.title {
-			margin-bottom: 46px;
-			line-height: 75px;
-			font-size: 64px;
-			font-weight: 700;
-			text-transform: uppercase;
+		.text_wrap {
+			max-width: 920px;
+			padding: 46px 70px;
+			text-align: center;
+			border: 1px solid $colorSecondary;
+	
+			.title {
+				margin-bottom: 46px;
+				line-height: 75px;
+				font-size: 64px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+	
+			.subtitle {
+				line-height: 28px;
+				font-size: 18px;
+			}
 		}
-
-		.subtitle {
-			line-height: 28px;
-			font-size: 18px;
+	
+		.slide_mouse {
+			position: absolute;
+			bottom: 50px;
+			left: 50%;
+			transform: translateX(-50%);
+			
+			img{
+				animation: shake alternate 2s infinite ease-in-out;
+			}
+	
+			&:hover {
+				img {
+					animation-duration: .5s;
+				}
+			}
 		}
 	}
 
-	.slide_mouse {
-		position: absolute;
-		bottom: 50px;
-		left: 50%;
-		transform: translateX(-50%);
+	@media (max-width: $breakpoint768) {
+		.container {
+			.text_wrap {
+				padding: 20px 30px;
+	
+				.title {
+					margin-bottom: 20px;
+					line-height: 50px;
+					font-size: 40px;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
 		
-		img{
-			animation: shake alternate 2s infinite ease-in-out;
-		}
-
-		&:hover {
-			img {
-				animation-duration: .5s;
+				.subtitle {
+					line-height: 20px;
+					font-size: 14px;
+				}
 			}
 		}
 	}
