@@ -32,6 +32,5 @@ function burgerMenu() {
 burgerMenu();
 
 // Инициализация плавного скрола по якорям
-
 var scroll = new SmoothScroll('a[href*="#"]');
 
